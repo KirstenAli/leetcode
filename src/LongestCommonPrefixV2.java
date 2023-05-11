@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
 public class LongestCommonPrefixV2 {
+
+    // time logN + N
     public String longestCommonPrefix(String[] strs) {
 
         Arrays.sort(strs);
@@ -8,7 +10,7 @@ public class LongestCommonPrefixV2 {
         var firstWord = strs[0];
         var secondWord = strs[strs.length-1];
 
-        var longestLength = Math.min(firstWord.length(),
+        var minLength = Math.min(firstWord.length(),
                 secondWord.length());
 
         var prefix ="";
@@ -16,7 +18,7 @@ public class LongestCommonPrefixV2 {
         if(firstWord.equals("") || secondWord.equals(""))
             return prefix;
 
-        for (int i=0; i<longestLength; i++){
+        for (int i=0; i<minLength; i++){
             var firstChar = firstWord.charAt(i);
 
             if(firstChar != secondWord.charAt(i)) break;
