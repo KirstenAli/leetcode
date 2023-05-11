@@ -1,11 +1,12 @@
 import java.util.Arrays;
 
+// in this version we bring the complexity from n+Ln to n + logn
 public class LongestCommonPrefixV2 {
 
     // time logN + N
     public String longestCommonPrefix(String[] strs) {
 
-        Arrays.sort(strs);
+        Arrays.sort(strs); // logn
 
         var firstWord = strs[0];
         var secondWord = strs[strs.length-1];
