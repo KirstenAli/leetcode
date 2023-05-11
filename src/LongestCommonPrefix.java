@@ -1,6 +1,6 @@
 public class LongestCommonPrefix {
 
-    // time, n+Ln, where l is the length of the longest string
+    // time, c+Ln, where l is the length of the longest string, and c is the number of chars
     public String longestCommonPrefix(String[] strs) {
         var rows = strs.length;
         var columns = longestString(strs);
@@ -21,7 +21,7 @@ public class LongestCommonPrefix {
         return prefix;
     }
 
-    // where n is the total num of chars
+    // time c, where c is the total num of chars
     public char[][] StringsToCharMatrix(String[] strings, int columns){
         var rows = strings.length;
         var charMatrix = new char[rows][columns];
