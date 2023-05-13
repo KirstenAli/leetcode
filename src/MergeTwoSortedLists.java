@@ -6,6 +6,7 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
+//worst case time, n.
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
@@ -47,7 +48,6 @@ public class MergeTwoSortedLists {
                 var node1 = new ListNode(list1.val);
                 var node2 = new ListNode(list1.val);
 
-
                 mergedList.next=node1;
                 mergedList.next.next=node2;
                 mergedList = node2;
@@ -61,6 +61,8 @@ public class MergeTwoSortedLists {
         return head.next;
     }
 
+
+    // time o(1)
     public ListNode appendList(ListNode list1, ListNode list2){
         return list2.next=list1;
     }
