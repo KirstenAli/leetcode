@@ -29,7 +29,7 @@ public class BinarySearch {
     public static void main(String[] args){
         var intArray = new int[]{1, 2, 3, 4, 5, 6, 8, 10, 20};
 
-        var result = new BinarySearch().binarySearch(intArray, 21);
+        var result = new BinarySearch().binarySearch(intArray, 2);
 
         System.out.println(result);
     }
