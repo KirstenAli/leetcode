@@ -58,7 +58,6 @@ public class SwappingNodesLinkedList {
         else if(k==length)
             head = firstTarget;
 
-
         return head;
     }
 
