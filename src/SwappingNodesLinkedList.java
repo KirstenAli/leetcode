@@ -54,7 +54,7 @@ public class SwappingNodesLinkedList {
         }
 
         if(k==1)
-            head=secondTarget;
+            head = secondTarget;
 
         else if(k==length)
             head = firstTarget;
