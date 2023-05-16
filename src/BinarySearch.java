@@ -1,5 +1,5 @@
 import static java.util.Arrays.copyOfRange;
-// time: we divide by two each time so log n
+// bad time complexity because of copyOfRange is in o(n), time: log2(n) + n , see SearchInsert which uses a better approach
 public class BinarySearch {
     public boolean binarySearch(int[] nums, int target) {
         var length = nums.length;
