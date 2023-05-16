@@ -38,16 +38,17 @@ public class SwappingNodesLinkedList {
             firstTarget.next = secondTarget;
             secondTarget.next = temp;
         }
-
         else {
 
             if (secondPos - k == 1) {
                 secondTarget.next = firstTarget;
-            } else {
+            }
+            else {
 
                 secondPre.next = firstTarget;
                 secondTarget.next = firstNext;
             }
+
             firstPre.next = secondTarget;
             firstTarget.next = secondNext;
         }
