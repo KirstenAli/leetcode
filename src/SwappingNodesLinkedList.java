@@ -88,4 +88,5 @@ public class SwappingNodesLinkedList {
 
         return new ListWrapper(preListNode, head, head.next);
     }
+
 }

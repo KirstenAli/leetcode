@@ -1,5 +1,5 @@
 public class ArrayToListNode {
-    public ListNode arrayToListNode(int[] a){
+    public static ListNode arrayToListNode(int[] a){
 
         ListNode currentNode = new ListNode(a[0]);
         var head = currentNode;

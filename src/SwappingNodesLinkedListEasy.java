@@ -31,7 +31,6 @@ public class SwappingNodesLinkedListEasy {
         return head;
     }
 
-
     public int linkListLength(ListNode node){
         var head = node;
 
@@ -43,5 +42,14 @@ public class SwappingNodesLinkedListEasy {
         }
 
         return count;
+    }
+
+    public static void main(String[] args){
+        var intArray = new int[]{100, 90};
+
+        var list = ArrayToListNode.arrayToListNode(intArray);
+
+        new SwappingNodesLinkedListEasy().swapNodes(list, 2);
+
     }
 }
