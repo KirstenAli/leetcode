@@ -11,7 +11,7 @@ public class LengthOfLastWordv2 {
                     count++;
                 }
             }
-
+            
             else{
                 if(s.charAt(i) ==' ')
                     break;
