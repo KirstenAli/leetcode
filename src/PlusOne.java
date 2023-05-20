@@ -1,4 +1,7 @@
+// worst case n+n = 2n 
 public class PlusOne {
+
+    // time = n
     public int[] plusOne(int[] digits) {
         var length = digits.length-1;
 
@@ -21,6 +24,7 @@ public class PlusOne {
         return digits;
     }
 
+    // time = n
     public int[] getPlusOneArray(int[] digits){
         var nums = new int[digits.length+1];
 
