@@ -49,7 +49,7 @@ import java.util.HashMap;
 public class RomanToInteger {
 
     // space = 13
-    // time = n * n = n^2
+    // time = n * 2 = 2n
     public int romanToInt(String s) {
         var charMap = new HashMap<String, Integer>();
         charMap.put("I", 1);
@@ -86,7 +86,7 @@ public class RomanToInteger {
         return result;
     }
 
-    // time complexity substring = n (as of java 7)
+    // time complexity is linear (as of java 7) so time =2
     public String nextTwoChars(String s, int pos){
 
         if(s.length()-1 ==pos)
