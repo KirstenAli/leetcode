@@ -1,4 +1,4 @@
-// worst case n+n = 2n 
+// worst case time n+n = 2n
 public class PlusOne {
 
     // time = n
