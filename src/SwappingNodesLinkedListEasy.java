@@ -2,7 +2,7 @@ public class SwappingNodesLinkedListEasy {
 
 
     public ListNode swapNodes(ListNode head, int k) {
-        var listLength = linkListLength(head);
+        var listLength = LinkListLength.linkListLength(head);
         var secondPos = (listLength-k)+1;
         var node = head;
         ListNode firstNode = head;
@@ -29,19 +29,6 @@ public class SwappingNodesLinkedListEasy {
         secondNode.val = temp;
 
         return head;
-    }
-
-    public int linkListLength(ListNode node){
-        var head = node;
-
-        var count =1;
-
-        while(head.next!=null) {
-            head = head.next;
-            count++;
-        }
-
-        return count;
     }
 
     public static void main(String[] args){
