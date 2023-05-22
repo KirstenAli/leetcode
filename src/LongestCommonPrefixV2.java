@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-// in this version we bring the time complexity from c+Ln to n + logn
+// time complexity log2(n)*n +n
 public class LongestCommonPrefixV2 {
 
     // time logN + N
