@@ -2,27 +2,22 @@ public class FirstOccurrenceInString {
     // time worst case, n-m(m), where n is the length of haystack and m is the length of needle
     public int strStr(String haystack, String needle) {
 
+        var lengthDiff = haystack.length() - needle.length();
 
-        if(needle.length() > haystack.length())
-            return -1;
+        for(int i=0; i<=lengthDiff; i++)
+        {
+            var count =i;
 
-        else{
-            var lengthDiff = haystack.length() - needle.length();
+            for(int j=0; j<needle.length(); j++){
 
-            for(int i=0; i<=lengthDiff; i++)
-            {
-                var count =i;
-                for(int j=0; j<needle.length(); j++){
+                if(needle.charAt(j) != haystack.charAt(count))
+                    break;
 
-                    if(needle.charAt(j) != haystack.charAt(count))
-                        break;
+                else if(j==needle.length()-1)
+                    return i;
 
-                    else if(j==needle.length()-1)
-                        return i;
+                count++;
 
-                    count++;
-
-                }
             }
         }
 
