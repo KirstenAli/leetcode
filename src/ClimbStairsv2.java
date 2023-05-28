@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 // dynamic programming approach but still bad memory compared to iterative approach.
+// memory in n, we can reduce memory to constant time if we implement the iterative approach
 public class ClimbStairsv2 {
 
     private final Map<Integer, Integer> previousResults =new HashMap<>();
