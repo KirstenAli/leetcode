@@ -11,20 +11,19 @@ public class ClimbStairsv2 {
         if(previousResults.containsKey(n))
             return previousResults.get(n);
 
-        else if(n ==1)
+        if(n ==1)
             return 1;
 
-        else if(n == 2)
+        if(n == 2)
             return 2;
 
-        else if(n==3)
+        if(n==3)
             return 3;
 
-        else {
-            result = climbStairs(n-1) + climbStairs(n-2);
-            previousResults.put(n, result);
+        result = climbStairs(n-1) + climbStairs(n-2);
+        previousResults.put(n, result);
 
-            return result;
-        }
+        return result;
+
     }
 }
