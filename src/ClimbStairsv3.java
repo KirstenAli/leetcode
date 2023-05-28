@@ -1,4 +1,6 @@
 // in this version I implement an iterative version to improve the memory
+// time, worst case, n+1-4
+// space, constant
 public class ClimbStairsv3 {
     public int climbStairs(int n) {
 
