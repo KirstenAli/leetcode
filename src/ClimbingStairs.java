@@ -1,6 +1,7 @@
 // this problem can be translated to the fibonacci sequence. We can solve this easily with recursion.
-// time complexity is bad. each climbStairs call (excluding base cases)executes exactly two further climbStairs, thus time is 2^n
-// consider iterative approach or dynamic programming to improve complexity
+// time complexity is bad. each climbStairs call (excluding base cases) executes exactly two further climbStairs,
+// thus time is 2^n
+// consider iterative approach or dynamic programming to improve time complexity
 public class ClimbingStairs {
     public int climbStairs(int n) {
         int result;
