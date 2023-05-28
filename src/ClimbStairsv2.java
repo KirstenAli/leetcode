@@ -11,7 +11,7 @@ public class ClimbStairsv2 {
         if(previousResults.containsKey(n))
             return previousResults.get(n);
 
-        if(n ==1)
+        else if(n ==1)
             return 1;
 
         else if(n == 2)
