@@ -7,6 +7,7 @@ An input string is valid if:
 Every close bracket has a corresponding open bracket of the same type.
 
  */
+// time = linear, space = constant
 
 public class ValidParentheses {
     public boolean isValid(String s) {
