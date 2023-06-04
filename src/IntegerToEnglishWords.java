@@ -1,4 +1,6 @@
 //Hard ???
+
+// time and space complexity, constant
 public class IntegerToEnglishWords {
     public String result(int num) {
         String ones[]= {"","One", "Two","Three","Four","Five","Six","Seven","Eight","Nine"};
