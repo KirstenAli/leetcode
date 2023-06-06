@@ -2,25 +2,25 @@ import static java.util.Arrays.copyOfRange;
 
 public class MergeSort {
 
-    public int[] mergeSort(int [] nums){
-        if(nums.length ==1)
-            return nums;
+    public int[] mergeSort(int [] nums, int start, int end){
+        var midPoint = (start+end)/2;
+        var range = end-start;
 
-        else if(nums.length ==2){
-            if (nums[0] >nums[1]) {
-                var temp = nums[0];
+        if(range ==0)
+            return new int[]{nums[start]};
 
-                nums[0] =nums[1];
-                nums[1] = temp;
-            }
+        else if(range ==1){
+            var array = new int[2];
 
-            return nums;
+            if (nums[start] >nums[end])
+                return  new int[]{nums[end], nums[start]};
+           else
+               return new int[]{nums[start], nums[end]};
+
         }
 
-        var midPoint = nums.length/2;
-
-        var subListA = mergeSort(copyOfRange(nums, 0, midPoint));
-        var subListB = mergeSort(copyOfRange(nums, midPoint, nums.length));
+        var subListA = mergeSort(nums, start, midPoint);
+        var subListB = mergeSort(nums, midPoint+1, end);
 
         return merge(subListA, subListB);
     }
@@ -64,10 +64,9 @@ public class MergeSort {
 
     public static void main(String[]args){
 
-        var arrayA = new int[]{3,1};
-        var arrayB = new int[]{1,2};
+        var arrayA = new int[]{5, 4, 3,2,1};
 
-        var result = new MergeSort().merge(arrayA, arrayB);
+        var result = new MergeSort().mergeSort(arrayA, 0, arrayA.length-1);
 
         for(int i: result){
             System.out.println(i);
