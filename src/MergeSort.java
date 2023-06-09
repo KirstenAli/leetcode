@@ -10,7 +10,6 @@ public class MergeSort {
             return new int[]{nums[start]};
 
         else if(range ==1){
-            var array = new int[2];
 
             if (nums[start] >nums[end])
                 return  new int[]{nums[end], nums[start]};
