@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class RemoveDuplicatesFromSortedArray {
@@ -10,7 +9,6 @@ public class RemoveDuplicatesFromSortedArray {
             map.put(nums[i], nums[i]);
 
         expectedNums = map.values().toArray(new Integer[0]);
-        nums =  Arrays.stream(expectedNums).mapToInt(i->i).toArray();
 
         return expectedNums.length;
     }
