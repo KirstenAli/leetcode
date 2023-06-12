@@ -12,7 +12,7 @@ public class SearchInsert {
             midPoint = start+end/2;
 
             if (nums[midPoint] == target) {
-                break;
+                return midPoint;
             }
 
             else if (nums[midPoint] < target) {
@@ -25,14 +25,11 @@ public class SearchInsert {
 
         }
 
-        if(nums[midPoint]<target)
-            midPoint++;
-
-        return midPoint;
+        return end+1;
     }
 
     public static void main(String[] args){
-        var intArray = new int[]{1, 3, 5, 6, 8, 10, 20};
+        var intArray = new int[]{5,7};
 
         var result = new SearchInsert().searchInsert(intArray, 6);
 
