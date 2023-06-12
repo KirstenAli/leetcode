@@ -29,9 +29,9 @@ public class SearchInsert {
     }
 
     public static void main(String[] args){
-        var intArray = new int[]{5,7};
+        var intArray = new int[]{5,7,8,9};
 
-        var result = new SearchInsert().searchInsert(intArray, 6);
+        var result = new SearchInsert().searchInsert(intArray, 4);
 
         System.out.println(result);
     }
