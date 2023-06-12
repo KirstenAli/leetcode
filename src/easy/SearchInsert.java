@@ -9,7 +9,7 @@ public class SearchInsert {
         int midPoint = 0;
 
         while (start<=end) {
-            midPoint = start+end/2;
+            midPoint = (start+end)/2;
 
             if (nums[midPoint] == target) {
                 return midPoint;
@@ -29,9 +29,9 @@ public class SearchInsert {
     }
 
     public static void main(String[] args){
-        var intArray = new int[]{5,7,8,9};
+        var intArray = new int[]{1,3,5,6};
 
-        var result = new SearchInsert().searchInsert(intArray, 4);
+        var result = new SearchInsert().searchInsert(intArray, 5);
 
         System.out.println(result);
     }
