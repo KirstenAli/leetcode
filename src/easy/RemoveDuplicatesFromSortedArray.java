@@ -1,17 +1,25 @@
 package easy;
 
-import java.util.HashMap;
-
 public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
-        var map = new HashMap<Integer, Integer>();
-        Integer[] expectedNums;
 
-        for (int i=0; i<nums.length; i++)
-            map.put(nums[i], nums[i]);
+        int i=0;
+        int j =0;
+        int next = i+1;
 
-        expectedNums = map.values().toArray(new Integer[0]);
+        while(i<nums.length-1){
 
-        return expectedNums.length;
+            if(nums[i]<nums[next]){
+                nums[j] = nums[i];
+                j++;
+            }
+
+            i++;
+            next=i+1;
+        }
+
+        nums[j] = nums[i];
+
+        return j+1;
     }
 }
