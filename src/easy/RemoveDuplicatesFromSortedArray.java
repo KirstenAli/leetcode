@@ -1,5 +1,5 @@
 package easy;
-// with this approach we are not using a hashset to store the numbers to the space complexity in reduced to constant
+// with this approach we are not using a hashset to store the numbers so the space complexity in reduced to constant
 // time is in n, where n is the amount of nums.
 
 public class RemoveDuplicatesFromSortedArray {
