@@ -1,7 +1,8 @@
 package easy;
 
 import static java.util.Arrays.copyOfRange;
-// because copyOfRange is linear, time: log2(n) + n , see easy.SearchInsert which uses a better approach
+// because copyOfRange is linear, time: log2(n) * n , see easy.SearchInsert which keeps track of indices and so reduces the complexity
+// to log2(n)
 public class BinarySearch {
     public boolean binarySearch(int[] nums, int target) {
         var length = nums.length;
